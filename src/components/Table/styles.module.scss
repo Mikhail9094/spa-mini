@@ -1,0 +1,44 @@
+@import "../../sass/variables.scss";
+
+.table {
+  margin: 0 10px 10px 10px;
+  border-collapse: collapse;
+  font-family: $roboto;
+  font-weight: 400;
+  white-space: nowrap;
+
+  & thead {
+    position: sticky;
+    top: 44px;
+    background: $background-main;
+    width: 100%;
+    z-index: 1;
+
+    & th {
+      padding: 12px;
+      font-size: 14px;
+      text-align: start;
+      color: $main-text-color;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  & tbody {
+    width: 100%;
+    overflow: auto;
+
+    & td {
+      padding: 12px;
+      font-size: 14px;
+      line-height: 20px;
+      color: $secondary-text-color;
+      border-bottom: 1px solid $border-color;
+      box-sizing: border-box;
+    }
+  }
+
+  & tr {
+    height: 60px;
+    width: 100%;
+  }
+}
